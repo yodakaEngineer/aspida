@@ -1,4 +1,4 @@
-import { useQuery, UseQueryResult, UseQueryOptions } from 'react-query'
+import { useQuery, UseQueryResult, UseQueryOptions } from '@tanstack/react-query'
 
 type QueryOptions<T extends (option: any) => Promise<any>> = Parameters<
   Parameters<T> extends [Parameters<T>[0]]
@@ -35,7 +35,7 @@ function useAspidaQuery<
   const opt = typeof key === 'string' ? (option as any)[0] : key
 
   return useQuery(
-    typeof key === 'string' ? [api.$path(opt), method] : api.$path(opt),
+    typeof key === 'string' ? [api.$path(opt), method] : [api.$path(opt)],
     () => api[method](opt),
     opt
   )
