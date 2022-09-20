@@ -1,12 +1,12 @@
 {
-  "name": "@aspida/react-query",
+  "name": "@aspida/tanstack-react-query",
   "version": "0.0.0",
-  "description": "React Query wrapper for aspida",
+  "description": "TanStack React Query wrapper for aspida",
   "author": "Solufa <solufa2020@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/aspida/aspida/tree/master/packages/aspida-react-query#readme",
+  "homepage": "https://github.com/aspida/aspida/tree/master/packages/aspida-tanstack-react-query#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aspida/aspida.git"
@@ -23,7 +23,8 @@
   "keywords": [
     "aspida",
     "typescript",
-    "react-query"
+    "react-query",
+    "tanstack"
   ],
   "dependencies": {
     "aspida": "^1.7.1"
